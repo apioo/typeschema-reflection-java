@@ -1,0 +1,37 @@
+{
+  "definitions": {
+    "Student": {
+      "type": "struct",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "age": {
+          "type": "integer"
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "score": {
+          "type": "number"
+        },
+        "faculty": {
+          "type": "reference",
+          "target": "Faculty"
+        }
+      }
+    },
+    "Faculty": {
+      "type": "struct",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "root": "Student"
+}

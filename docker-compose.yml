@@ -1,0 +1,9 @@
+services:
+  generator:
+    image: apiootech/typeschema-generator:0.6
+    environment:
+      FORMAT: "java"
+      NAMESPACE: "org.acme"
+      SOURCE: "typeschema.json"
+    volumes:
+      - ./output:/usr/src/typeschema/output
